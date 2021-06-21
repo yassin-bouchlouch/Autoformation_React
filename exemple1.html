@@ -1,0 +1,21 @@
+<!DOCTYPE html><html>
+<head>
+  <script src='/react.development.js'></script>
+  <script src='/react-dom.development.js'></script>
+  <script src="/babel.js"></script>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel">
+
+  function Welcome(props) {
+    return <h1>Bonjour, {props.firstname}  {props.lastname} {props.email}</h1>;
+  }
+
+ ReactDOM.render(<Welcome firstname = "Bouchlouch" lastname="yassin" email="test@gmail.com" />, 
+ document.getElementById('root'));
+
+</script>
+
+</body></html>
